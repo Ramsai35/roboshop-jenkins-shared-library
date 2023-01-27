@@ -23,7 +23,11 @@ def call() {
             }
         }
 
-
+        stage('Upload Code Into S3 bucket'){
+            steps {
+                echo 'Upload'
+            }
+        }
     }
 
     }
