@@ -17,7 +17,11 @@ def call() {
             }
         }
 
-
+        stage('Quality Control') {
+            steps {
+                echo 'Quality control'
+            }
+        }
 
 
     }
