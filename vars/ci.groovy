@@ -1,11 +1,11 @@
-def call(){
+def call() {
 
-    pipeline{
-        agent{
+    pipeline {
+        agent {
             label 'workstation'
         }
-    stages{
-        stage(compile/Build){
+    stages {
+        stage('Compile/Build') {
             steps{
                 echo 'compile'
             }
