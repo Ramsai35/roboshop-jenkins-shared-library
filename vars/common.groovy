@@ -3,3 +3,8 @@ def  compile() {
         sh 'npm install'
     }
 }
+
+    if (app_lang == "maven") {
+        sh 'mvn package'
+    }
+}
