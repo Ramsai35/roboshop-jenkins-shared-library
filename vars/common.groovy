@@ -11,12 +11,17 @@ def  compile() {
 
 def unittests() {
     if (app_lang == "nodejs") {
-       // sh 'npm test'
-        sh 'echo Test cases'
+       sh 'npm test || true'
+        //sh 'echo Test cases'
     }
 
 
     if (app_lang == "maven") {
         sh 'mvn test'
     }
+
+    if (app_lang == "python") {
+        sh 'python3 -m unittest'
+    }
+
 }
