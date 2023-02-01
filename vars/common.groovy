@@ -11,7 +11,7 @@ def  compile() {
 
 def unittest() {
     if (app_lang == "nodejs") {
-        sh 'npm install'
+        sh 'npm test'
     }
 
 
