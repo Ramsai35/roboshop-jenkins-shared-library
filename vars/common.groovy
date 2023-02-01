@@ -9,7 +9,7 @@ def  compile() {
     }
 }
 
-def unittest() {
+def unittests() {
     if (app_lang == "nodejs") {
         sh 'npm test'
     }
