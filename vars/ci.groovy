@@ -66,6 +66,6 @@ def call() {
 
 
 } catch(Exception e) {
-    common.email("Failed")
+    echo "catch"
 }
 }
