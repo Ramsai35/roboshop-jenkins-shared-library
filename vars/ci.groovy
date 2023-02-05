@@ -18,10 +18,6 @@ def call() {
                 sh 'env'
             }
 
-            pipeline {
-                agent {
-                    label 'workstation'
-                }
                 stages {
                     stage('Compile/Build') {
                         steps {
